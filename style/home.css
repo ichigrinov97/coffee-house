@@ -109,12 +109,21 @@ main .prew button {
     border: 1px;
 }
 
+.choose .left-arrow:hover{
+    background-image: url(../img/State=hover.svg);
+    transform: scale(-1);
+}
+
 .choose .right-arrow {
     background-image: url(../img/button-icon-right.svg);
     width: 60px;
     height: 60px;
     border-radius: 100px;
     border: 1px;
+}
+
+.choose .right-arrow:hover{
+    background-image: url(../img/State=hover.svg);
 }
 
 .about-coffe h1 {
@@ -279,6 +288,10 @@ footer .apps .left .icons .ios {
 
 }
 
+footer .apps .left .icons .ios:hover{
+    background-image: url(../img/ios-hover.svg);
+}
+
 footer .apps .left .icons .android {
     background-image: url(../img/android.svg);
     width: 160px;
@@ -288,6 +301,10 @@ footer .apps .left .icons .android {
     border: 1px;
     margin-top: 40px;
     margin-left: 20px;
+}
+
+footer .apps .left .icons .android:hover{
+    background-image: url(../img/android-hover.svg);
 }
 
 footer .apps .right .phones {
@@ -375,12 +392,24 @@ footer .contacts .right h2 {
 footer .contacts .right ul{
 font-size: 16px;
 font-weight: 600;
-line-height: 24px;
 text-align: left;
 color: #E1D4C9;
 margin-left: 100px;
 margin-top: 40px;
+
 }
 footer .contacts .right ul li{
-    
+    list-style-type: none;
+
+}
+footer .contacts .right ul .adres{
+    list-style-image: url(../img/pin-alt.svg);
+}
+footer .contacts .right ul .phone{
+    list-style-image: url(../img/phone.svg);
+    margin-top: 16px;
+}
+footer .contacts .right ul .work{
+    list-style-image: url(../img/clock.svg);
+    margin-top: 16px;
 }
