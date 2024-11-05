@@ -14,18 +14,40 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .links {
     display: flex;
     gap: 40px;
     align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #403F3D;
 }
 
 .menu {
     display: flex;
     align-items: center;
+    height: 30px;
 }
+.menu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #403F3D;
+
+}
+
+.menu:hover {
+    border-bottom: 1px solid black;
+}
+
 
 main .prew {
     background-image: url(../img/img-hero.svg);
@@ -109,7 +131,7 @@ main .prew button {
     border: 1px;
 }
 
-.choose .left-arrow:hover{
+.choose .left-arrow:hover {
     background-image: url(../img/State=hover.svg);
     transform: scale(-1);
 }
@@ -122,7 +144,7 @@ main .prew button {
     border: 1px;
 }
 
-.choose .right-arrow:hover{
+.choose .right-arrow:hover {
     background-image: url(../img/State=hover.svg);
 }
 
@@ -288,7 +310,7 @@ footer .apps .left .icons .ios {
 
 }
 
-footer .apps .left .icons .ios:hover{
+footer .apps .left .icons .ios:hover {
     background-image: url(../img/ios-hover.svg);
 }
 
@@ -303,7 +325,7 @@ footer .apps .left .icons .android {
     margin-left: 20px;
 }
 
-footer .apps .left .icons .android:hover{
+footer .apps .left .icons .android:hover {
     background-image: url(../img/android-hover.svg);
 }
 
@@ -354,31 +376,98 @@ footer .contacts .left .social {
 }
 
 footer .contacts .left .social .twitter {
-    background-image: url(../img/twitter.svg);
     width: 60px;
     height: 60px;
-    border: 1px;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer .contacts .left .social .twitter .logo {
+    background-image: url(../img/twitter-logo.svg);
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin: 21px 19px 21px 19px;
+}
 
+footer .contacts .left .social .twitter:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B0907A;
 
 }
 
 footer .contacts .left .social .inst {
-    background-image: url(../img/inst.svg);
     width: 60px;
     height: 60px;
-    border: 1px;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer .contacts .left .social .facebook {
-    background-image: url(../img/facebook.svg);
+footer .contacts .left .social .inst .logo {
+    background-image: url(../img/instagram-logo.svg);
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin: 21px 19px 21px 19px;
+}
+
+footer .contacts .left .social .inst:hover {
     width: 60px;
     height: 60px;
-    border: 1px;
+    border-radius: 100px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B0907A;
 }
+
+
+
+footer .contacts .left .social .facebook {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacts .left .social .facebook .logo {
+    background-image: url(../img/facebook-logo.svg);
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin: 21px 19px 21px 19px;
+}
+
+footer .contacts .left .social .facebook:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B0907A;
+}
+
 
 footer .contacts .right h2 {
     font-size: 24px;
@@ -389,27 +478,37 @@ footer .contacts .right h2 {
     margin-top: 42px;
     margin-left: 100px;
 }
-footer .contacts .right ul{
-font-size: 16px;
-font-weight: 600;
-text-align: left;
-color: #E1D4C9;
-margin-left: 100px;
-margin-top: 40px;
+
+footer .contacts .right ul {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #E1D4C9;
+    margin-left: 100px;
+    margin-top: 40px;
 
 }
-footer .contacts .right ul li{
+
+footer .contacts .right ul li {
     list-style-type: none;
 
 }
-footer .contacts .right ul .adres{
+
+footer .contacts .right ul .adres {
     list-style-image: url(../img/pin-alt.svg);
 }
-footer .contacts .right ul .phone{
+
+footer .contacts .right ul .adres:hover {
+    list-style-image: url(../img/pin-alt.svg);
+    text-decoration: underline;
+}
+
+footer .contacts .right ul .phone {
     list-style-image: url(../img/phone.svg);
     margin-top: 16px;
 }
-footer .contacts .right ul .work{
+
+footer .contacts .right ul .work {
     list-style-image: url(../img/clock.svg);
     margin-top: 16px;
 }
