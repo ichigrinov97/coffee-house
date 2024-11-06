@@ -34,7 +34,8 @@ header {
     align-items: center;
     height: 30px;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -124,29 +125,88 @@ main .prew button {
 }
 
 .choose .left-arrow {
-    background-image: url(../img/button-icon-left.svg);
     width: 60px;
     height: 60px;
     border-radius: 100px;
-    border: 1px;
+    border: 1px solid #665F55;
+    display: flex;
+
+    &:hover {
+        background-color: #665F55;
+
+        & .button-left {
+            background-image: url(../img/right-button-hover.svg);
+            width: 30px;
+            height: 30px;
+            top: 6px;
+            left: 18.5px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            transform: scale(-1);
+            background-repeat: no-repeat;
+            margin: 5px 22px 22px 22px;
+        }
+
+    }
+
+
 }
 
-.choose .left-arrow:hover {
-    background-image: url(../img/State=hover.svg);
-    transform: scale(-1);
+
+.choose .left-arrow .button-left {
+    background-image: url(../img/left-button.svg);
+    width: 24px;
+    height: 24px;
+    top: 6px;
+    left: 18.5px;
+    background-repeat: no-repeat;
+    border: 1px;
+    margin: 33px 24px 24px 24px;
+
 }
 
 .choose .right-arrow {
-    background-image: url(../img/button-icon-right.svg);
     width: 60px;
     height: 60px;
     border-radius: 100px;
-    border: 1px;
+    border: 1px solid #665F55;
+    display: flex;
+
+    &:hover {
+        background-color: #665F55;
+
+        & .button-right {
+            background-image: url(../img/right-button-hover.svg);
+            width: 30px;
+            height: 30px;
+            top: 6px;
+            left: 18.5px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            background-repeat: no-repeat;
+            margin: 35px 18px 22px 24px;
+        }
+
+    }
+
+
 }
 
-.choose .right-arrow:hover {
-    background-image: url(../img/State=hover.svg);
+
+.choose .right-arrow .button-right {
+    background-image: url(../img/right-button.svg);
+    width: 24px;
+    height: 24px;
+    top: 6px;
+    left: 18.5px;
+    background-repeat: no-repeat;
+    border: 1px;
+    margin: 32px 22px 24px 24px;
+
 }
+
 
 .about-coffe h1 {
     font-size: 24px;
