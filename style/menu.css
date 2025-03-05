@@ -97,7 +97,7 @@ header {
     border-radius: 100px;
     border: 1px solid #665F55;
 
-    &:hover {
+    &:hover, &.active {
         background: #665F55;
 
         & .cup {
@@ -170,7 +170,7 @@ header {
     border-radius: 100px;
     border: 1px solid #665F55;
 
-    &:hover {
+    &:hover ,&.active {
         background: #665F55;
 
         & .tea {
@@ -244,7 +244,7 @@ header {
     border-radius: 100px;
     border: 1px solid #665F55;
 
-    &:hover {
+    &:hover, &.active {
         background: #665F55;
 
         & .desert {
@@ -324,14 +324,14 @@ header {
 
 }
 
-.assorti .irish .img {
+.assorti .irish img {
     width: 310px;
     height: 310px;
     border-radius: 40px;
 
 }
 
-.assorti .irish .coffee-1 {
+/* .assorti .irish .coffee-1 {
     background-image: url(../img/irish.svg);
 }
 
@@ -361,7 +361,7 @@ header {
 
 .assorti .irish .coffee-8 {
     background-image: url(../img/coffee-8.svg);
-}
+} */
 
 .assorti .irish h2 {
     font-size: 24px;
